@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: transparent;
+    font-weight: 100;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    color: #1e1e1e;
+    user-select: none;
+    /* border: 1px solid black; */
+}
+
+body{
+    background: linear-gradient(to right top, #cee, #ede, #eed);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

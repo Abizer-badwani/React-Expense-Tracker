@@ -1,0 +1,29 @@
+
+.transaction{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 8%; 
+    margin: 20px 0;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 5px;
+}
+
+.inc{
+    border-bottom: 3px solid lightgreen;
+}
+
+.exp{
+    border-bottom: 3px solid orangered;
+}
+
+.transaction .currency{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.transaction p{
+    text-transform: uppercase;
+}

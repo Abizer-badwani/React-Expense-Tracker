@@ -1,0 +1,33 @@
+.amount{
+    display: flex;
+}
+
+.amount .income, .amount .expense{
+    width: 100%;
+    padding: 5% 10%;
+}
+
+.amount .income{
+    background-color: rgb(176, 255, 176);
+    border-bottom-left-radius: 10px;
+}
+
+.amount .expense{
+    background-color: rgb(255, 175, 175);
+    border-bottom-right-radius: 10px;
+}
+
+.rupee{
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+
+
+.income p, .expense p{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    font-weight: 600;
+}

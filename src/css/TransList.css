@@ -1,0 +1,15 @@
+.trans-title{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2% 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.line{
+    background-color: #ccc;
+    width: 70%;
+    margin: 5% auto;
+
+}
