@@ -13,6 +13,4 @@ export const TransactionProvider = ({children}) => {
     </Transactions.Provider>
 }
 
-export const TransactionState = () => {
-    return useContext(Transactions)
-}
+export const TransactionState = () => useContext(Transactions)

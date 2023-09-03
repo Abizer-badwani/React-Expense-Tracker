@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+    letter-spacing: 2px;
+    /* border: 1px solid black; */
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+main{
+    width: 30%;
+    margin: auto;
+}
+
+.history{
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    *{
+        letter-spacing: 1px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+}

@@ -1,14 +1,17 @@
 import ReactDomClient from 'react-dom/client'
-import App from './App'
-import './css/index.css'
+import { BrowserRouter } from 'react-router-dom'
 import { TransactionProvider } from './context/GlobalContext'
 import { Toaster } from 'react-hot-toast';
+import App from './App'
+import './index.css'
 
 const root = ReactDomClient.createRoot(document.getElementById('root'))
 
 root.render(
     <TransactionProvider>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
         <Toaster position='top-right' />
     </TransactionProvider>
 

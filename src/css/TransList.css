@@ -1,15 +1,112 @@
-.trans-title{
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 2% 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.transaction-history-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.line{
-    background-color: #ccc;
-    width: 70%;
-    margin: 5% auto;
+.transaction-title{
+    text-align: center;
+    padding: 5% 0;
+    font-size: 2.5rem;
+    position: relative;
+}
 
+.transaction-title #back-icon{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.transaction-amount{
+    display: flex;
+}
+
+.income-transaction, .expense-transaction{
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.income-transaction{
+    background-color: lightseagreen;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.expense-transaction{
+    background-color: lightsalmon;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.transaction-inner-container{
+    background-color: #fff;
+    margin: 5% 0;
+    height: 100%;
+    overflow-y: auto;
+    padding: 4%;
+}
+
+.transaction-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    margin-bottom: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.transaction-income-item{
+    border: 1px solid lightseagreen;
+}
+.transaction-expense-item{
+    border: 1px solid lightsalmon;
+}
+
+.no-transaction{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .transaction-title{
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    .transaction-title #back-icon{
+        left: 3%;
+    }
+
+    .transaction-amount{
+        width: 95%;
+        margin: auto;
+    }
+
+    .income-transaction, .expense-transaction{
+        padding: 6% 0;
+        font-size: 1rem;
+    }
+
+    .transaction-inner-container{
+        margin: 5% 3%;
+    }
+    
+    .transaction-item{
+        padding: 5%;
+        margin-bottom: 4%;
+        text-transform: capitalize;
+    }
+    
 }
