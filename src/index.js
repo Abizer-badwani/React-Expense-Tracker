@@ -1,5 +1,5 @@
 import ReactDomClient from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import { TransactionProvider } from './context/GlobalContext'
 import { Toaster } from 'react-hot-toast';
 import App from './App'
@@ -9,9 +9,9 @@ const root = ReactDomClient.createRoot(document.getElementById('root'))
 
 root.render(
     <TransactionProvider>
-        <BrowserRouter>
+        <Router>
             <App />
-        </BrowserRouter>
+        </Router>
         <Toaster position='top-right' />
     </TransactionProvider>
 
